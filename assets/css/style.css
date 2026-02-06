@@ -352,19 +352,25 @@ body {
   align-items: center;
 }
 .img-ar{
-  background-color: grey;
   border-bottom-right-radius: 40px;
   border-top-left-radius: 40px;
+  border: none;
+}
+.frd{
+  background-color: var(--secondary);
+}
+.fred{
+  background-color: var(--primary);
 }
 .img-ar h4{
   color: white;
   font-size: 20px;
-  margin: 5px 3px;
+  margin: 5px 35px;
 }
 .img-ar h6{
-  color: var(--secondary);
+  color: white;
   font-size: 16px;
-  margin: 5px 3px;
+  margin: 5px 35px;
 }
 .img-ar img{
   width: 400px;
