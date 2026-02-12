@@ -208,6 +208,9 @@ body {
   left: 4%;
   z-index: 10;
 }
+.search-m{
+  display: none;
+}
 
 @media (max-width: 780px) {
   .hero-card-search{
@@ -216,8 +219,14 @@ body {
   margin-left: 20px;
   }
   .search{
+    display: none;
+  }
+  .search-m{
+    display: unset;
     position: absolute;
-    bottom: -1150%;
+    bottom: 5%;
+    left: 5%;
+    z-index: 100;
   }
   .hero-slide {
     padding: 1rem 0 0rem 20px;
@@ -232,6 +241,10 @@ body {
   }
   .hero-content h1{
     font-size: 5rem;
+  }
+  .hero-content p{
+    font-size: 12px;
+    font-weight: 200;
   }
 }
 @media (max-width: 1000px) {
@@ -248,20 +261,23 @@ body {
   font-size: 1.2rem;
 }
 
-.hero-card-search .search{
+.hero-card-search .search,
+.search-m{
   background-color: transparent;
   padding: 5px 10px;
   border-radius: 3px;
   border: 2px solid white;
 }
-.search input{
+.search input,
+.search-m input{
   border: unset;
   outline: unset;
   background-color: transparent;
   color: white;
 }
 
-.search input::placeholder {
+.search input::placeholder,
+.search-m input::placeholder{
   color: #ffffff;
   opacity: 1;
   letter-spacing: 1px;
@@ -315,7 +331,7 @@ body {
       rgba(36, 24, 100, 0.2) 50%,
       rgba(36, 24, 100, 0) 75%
     ),
-    url("../images/proj/FINAL.jpg.jpeg");
+    url("../images/proj/final1.jpg.jpeg");
     min-width: 100%;
     min-height: 300px;
     background-size: cover;
