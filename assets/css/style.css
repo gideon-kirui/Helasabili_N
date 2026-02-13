@@ -1093,7 +1093,7 @@ form .btn{
   .mvc-h{
     align-items: left;
     margin-left: 0;
-    justify-content: flex-start;
+    justify-content: unset;
   }
 }
 .whatsapp-float {
