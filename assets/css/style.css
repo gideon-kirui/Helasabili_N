@@ -156,7 +156,7 @@ body {
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
   transition-delay: 0.4s;
-  left: 3.2%;
+  left: 8%;
   bottom: 30%;
 }
 
@@ -207,7 +207,7 @@ body {
   justify-content: space-between;
   align-items: center;
   bottom: 10%;
-  left: 4%;
+  left: 9%;
   z-index: 10;
 }
 .search-m{
@@ -238,6 +238,7 @@ body {
   }
   .hero-content {
     max-width: 450px;
+    left: 1.3%;
     bottom: 10%;
   }
   .hero-content h1{
