@@ -248,6 +248,7 @@ body {
     font-size: 12px;
     font-weight: 200;
   }
+  
 }
 @media (max-width: 1000px) {
   .hero-card-search{
@@ -941,11 +942,6 @@ form .btn{
   border-radius: 12px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    
-}
-
 /* RESPONSIVE */
 @media(max-width: 768px){
   .hero h1 { font-size: 2.2rem; }
@@ -1093,6 +1089,11 @@ form .btn{
 
   .logo img {
     max-width: 120px;
+  }
+  .mvc-h{
+    align-items: left;
+    margin-left: 0;
+    justify-content: flex-start;
   }
 }
 .whatsapp-float {
