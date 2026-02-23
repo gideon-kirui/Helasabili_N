@@ -542,6 +542,7 @@ form .btn{
 .intro-text h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
+  color: var(--secondary);
 }
 
 .intro-text p {
@@ -563,10 +564,76 @@ form .btn{
 .project-hero {
   height: 60vh;
   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url("../images/proj/roots.jpg.jpeg") center/cover no-repeat;
+              url("../images/proj/baner.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   color: white;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f8f9fc, #eef1f7);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* ===== Video Styling ===== */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== Form Styling ===== */
+.contact-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+}
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-section {
+        padding: 60px 15px;
+    }
+
+    .contact-form h2 {
+        font-size: 22px;
+    }
 }
 
 .project-hero h1 {
@@ -584,13 +651,50 @@ form .btn{
 }
 
 /* ================= SUMMARY ================= */
-.summary-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
-  margin: 4rem 0;
+.project-summary{
+  background-color: #ffffff;
+  border: 1px solid rgb(221, 221, 221);
+  margin: 40px auto;
+  border-radius: var(--radius-medium);
 }
-
+.summary-grid{
+  padding: 10px 20px;
+}
+.summary-grid iframe{
+  margin-top: 40px;
+}
+.summary-grid .titles{
+  width: fit-content;
+  font-size: 4rem;
+  color: var(--secondary);
+  margin: 10px auto;
+}
+.proj-dsbc{
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  text-align: start;
+  padding: 40px 10px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  line-height: 30px;
+}
+.proj-dsbc-b {
+  display: grid;
+  grid-template-columns: 280px 280px 280px 1fr;
+  text-align: start;
+  padding: 40px 10px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  line-height: 30px;
+}
+.sub-cnt-1 h4{
+  font-size: 18px;
+}
+.proj-dsbc p,
+.proj-dsbc li{
+  color: grey;
+}
+.sub-cnt-2 ul li{
+  list-style: disc;
+}
 .project-highlights li {
   margin-bottom: 0.8rem;
   color: #555;
@@ -607,6 +711,15 @@ form .btn{
   border-radius: 12px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   text-align: center;
+}
+
+.sub-cn-4 button{
+  background-color: var(--primary);
+  padding: 8px 10px;
+  border: unset;
+  border-radius: 3px;
+  color: var(--white);
+  cursor: pointer;
 }
 
 .price-card h2 {
@@ -638,6 +751,24 @@ form .btn{
   .summary-grid {
     margin: 2rem 0;
     gap: 1.5rem;
+  }
+  .proj-dsbc{
+    display: grid;
+    grid-template-columns: unset;
+  }
+  .proj-dsbc-b {
+    grid-template-columns: unset;
+  }
+  .summary-grid .titles{
+    font-size: 2rem;
+  }
+  .summary-grid{
+    padding: 10px 0px;
+  }
+  .project-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url("../images/proj/PHONE.jpg.jpeg") center/cover no-repeat;
   }
 
   .price-card {
@@ -1010,7 +1141,7 @@ textarea { resize: none; height: 120px; }
 }
 
 .hero-tm {
-  background: linear-gradient(120deg, #15056d8f, #9fca042a), url('../images/icons/group.jfif');
+  background: linear-gradient(120deg, #15056d8f, #9fca042a), url('../images/profiles/team.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
