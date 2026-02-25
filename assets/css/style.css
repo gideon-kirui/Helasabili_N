@@ -685,7 +685,7 @@ form .btn{
 
 .project-hero-slider {
   position: relative;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   overflow: hidden;
 }
@@ -712,25 +712,38 @@ form .btn{
 }
 
 .overlay {
+  position: relative;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  background: linear-gradient(
+    to top,
+    rgba(21, 5, 109, 0.85) 0%,   /* Thick & dark at bottom */
+    rgba(21, 5, 109, 0.5) 30%, 
+    rgba(255, 255, 255, 0.2) 80%, 
+    rgba(159, 202, 4, 0) 100% 
+  );
   display: flex;
   color: #fff;
 }
+.banner-cont-prd a{
+  height: fit-content;
+}
+.banner-cont-prd .titles{
+  height: fit-content;
+}
 .banner-cont-prd{
-  margin-left: 8%;
+  width: 95%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 18%;
+  margin-left: 5%;
 }
 .project-hero-slider h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem;
 }
-
-.project-hero-slider p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
-
 .project-hero-slider a {
   background: var(--primary);
   padding: 12px 25px;
@@ -788,7 +801,7 @@ form .btn{
 }
 
 .dots span.active {
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 /* Thumbnails */
@@ -823,7 +836,17 @@ form .btn{
   .project-hero-slider {
     height: 75vh;
   }
-
+  .banner-cont-prd{
+    margin-left: 3%;
+    text-align: center;
+  }
+  .banner-cont-prd .titles{
+    font-size: 1rem;
+  }
+  .banner-cont-prd a{
+    font-size: 12px;
+    background: var(--secondary);
+  }
   .thumb {
     width: 55px;
     height: 40px;
