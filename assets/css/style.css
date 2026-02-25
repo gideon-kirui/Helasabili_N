@@ -609,8 +609,8 @@ form .btn{
 }
 
 .project-hero {
-  height: 60vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
               url("../images/proj/baner.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -718,8 +718,8 @@ form .btn{
   background: linear-gradient(
     to top,
     rgba(21, 5, 109, 0.85) 0%,   /* Thick & dark at bottom */
-    rgba(21, 5, 109, 0.5) 30%, 
-    rgba(255, 255, 255, 0.2) 80%, 
+    rgba(21, 5, 109, 0.2) 30%, 
+    rgba(255, 255, 255, 0) 80%, 
     rgba(159, 202, 4, 0) 100% 
   );
   display: flex;
