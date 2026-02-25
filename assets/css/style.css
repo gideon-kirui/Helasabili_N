@@ -353,7 +353,7 @@ body {
 .whatsapp-float {
     position: fixed;
     bottom: 20%;
-    left: 25px;
+    right: 25px;
     width: 56px;
     height: 56px;
     background: #25D366;
@@ -1116,7 +1116,7 @@ textarea { resize: none; height: 120px; }
   width: 70%;
   text-align: left;
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   left: 9%;
 }
 
@@ -1420,13 +1420,14 @@ textarea { resize: none; height: 120px; }
   background: linear-gradient(
     to top,
     rgba(21, 5, 109, 0.85) 0%,   /* Thick & dark at bottom */
-    rgba(21, 5, 109, 0.6) 30%, 
-    rgba(159, 202, 4, 0.2) 70%, 
-    rgba(159, 202, 4, 0.05) 100% 
+    rgba(21, 5, 109, 0.4) 20%, 
+    rgba(159, 202, 4, 0) 100%, 
+    rgba(159, 202, 4, 0) 100% 
     ), url('../images/profiles/team.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 85vh;
 }
 /* Team Section */
 .team-section {
